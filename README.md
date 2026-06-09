@@ -1,6 +1,6 @@
 # AI Engineering Fundamentals
 
-This is a companion repo for the [AI Engineering Fundamentals course on Frontend Masters](https://frontendmasters.com/courses/ai-engineering/). In this course, you build an agentic diagram design tool, then learn to evaluate and improve it using professional AI engineering practices.
+A hands-on workshop where you build an agentic diagram design tool, then learn to evaluate and improve it using professional AI engineering practices.
 
 You build a Cloudflare Workers agent that controls an Excalidraw canvas through tool calls. Then you measure it with evals, and across the rest of the course you systematically improve it (context engineering, better tools, RAG, generative UI, human-in-the-loop, planning, data flywheel) and watch the eval scores move.
 
@@ -56,7 +56,7 @@ You can read them three ways:
 
 - **Directly on GitHub or in your editor** — they're plain markdown.
 - **In Obsidian** — open the `lessons/` directory as a vault.
-- **As a local site** — run `npm run docs` to serve them with VitePress at http://localhost:5170 so it doesn't conflict with the Drawing Application.
+- **As a local site** — run `npm run docs` to serve them with VitePress at http://localhost:5173.
 
 ## Setup
 
@@ -72,12 +72,12 @@ npm install
 
 You need accounts at four services. Three are free with no credit card. One needs a credit card but the costs for this course are pennies.
 
-| Service | Why | Cost | Credit card required? |
-|---|---|---|---|
-| **OpenAI** | LLM provider for the agent | A few cents for the whole course | **Yes** |
-| **Upstash Vector** | Vector store for RAG (lesson 8) | Free tier, very generous | No |
-| **Braintrust** | Eval platform (lessons 4+) | Free tier | No |
-| **Tavily** | Web search API for the agent's `searchWeb` tool (lesson 7) | Free tier, 1000 searches/month | No |
+| Service            | Why                                                        | Cost                             | Credit card required? |
+| ------------------ | ---------------------------------------------------------- | -------------------------------- | --------------------- |
+| **OpenAI**         | LLM provider for the agent                                 | A few cents for the whole course | **Yes**               |
+| **Upstash Vector** | Vector store for RAG (lesson 8)                            | Free tier, very generous         | No                    |
+| **Braintrust**     | Eval platform (lessons 4+)                                 | Free tier                        | No                    |
+| **Tavily**         | Web search API for the agent's `searchWeb` tool (lesson 7) | Free tier, 1000 searches/month   | No                    |
 
 #### OpenAI
 

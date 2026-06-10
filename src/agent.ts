@@ -40,6 +40,9 @@ export class DesignAgent extends AIChatAgent<Env> {
     const result = await generateText({
       model: openai.chat("llama3.2:1b"),
       messages: await convertToModelMessages(this.messages),
+      tools,
+      stopWhen: stepCountIs(5),
+      maxRetries: 0
     });
 
     console.log("After generateText");
